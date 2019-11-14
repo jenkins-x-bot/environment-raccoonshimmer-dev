@@ -1,4 +1,7 @@
 dependencies:
+- name: bdd-spring-1573718088
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
 - name: jenkins-x-platform
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
 - alias: jx-app-kuberhealthy
