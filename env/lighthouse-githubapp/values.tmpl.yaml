@@ -3,4 +3,4 @@ cert: vault:lh-github-app:cert
 id: vault:lh-github-app:id
 secret: vault:lh-github-app:secret
 
-replicaCount: 3
+#replicaCount: 3
