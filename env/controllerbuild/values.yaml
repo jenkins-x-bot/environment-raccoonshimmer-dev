@@ -1,1 +1,3 @@
 enabled: true
+image:
+  tag: 0.0.0-SNAPSHOT-PR-6250-18
