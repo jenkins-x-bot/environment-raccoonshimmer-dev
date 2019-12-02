@@ -1,0 +1,22 @@
+datadog:
+  datadog:
+    apiKey: vault:datadog-app:apiKey
+    clusterName: raccoonshimmer
+    tags:
+      - env:dev
+    nonLocalTraffic: true
+    collectEvents: true
+    leaderElection: true
+    logsEnabled: true
+    logsConfigContainerCollectAll: false
+    apmEnabled: true
+    processAgentEnabled: false
+    resources:
+      requests:
+        cpu: 200m
+        memory: 256Mi
+      limits:
+        cpu: 300m
+        memory: 512Mi
+  daemonset:
+    useHostPort: true
