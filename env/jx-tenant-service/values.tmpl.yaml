@@ -17,3 +17,6 @@ service:
     fabric8.io/expose: "false"
     fabric8.io/exposeUrl: https://jx-tenant-service{{ .Requirements.ingress.namespaceSubDomain }}{{ .Requirements.ingress.domain }}
 segmentWriteKey: vault:segment:write-key
+env:
+  BOT_NAME: jenkins-x-bot[bot]
+  JXT_PIPELINE_GIT_TAG: v0.0.598
