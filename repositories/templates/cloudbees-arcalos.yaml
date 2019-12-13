@@ -1,0 +1,18 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  labels:
+    owner: cloudbees
+    provider: github
+    repository: arcalos
+  name: cloudbees-arcalos
+  namespace: jx
+spec:
+  description: Imported application for cloudbees/arcalos
+  org: cloudbees
+  provider: https://github.com
+  providerName: github
+  repo: arcalos
+  scheduler:
+    kind: Scheduler
+    name: arcalos-scheduler
