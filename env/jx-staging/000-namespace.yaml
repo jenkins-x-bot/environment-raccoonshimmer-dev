@@ -5,7 +5,7 @@ metadata:
     jenkins-x.io/created-by: Jenkins X
   labels:
     env: staging
-    certmanager.k8s.io/disable-validation: true
+    certmanager.k8s.io/disable-validation: "true"
   name: jx-staging
 spec:
   finalizers:
