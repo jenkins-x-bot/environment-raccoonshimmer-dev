@@ -19,4 +19,4 @@ service:
 segmentWriteKey: vault:segment:write-key
 env:
   BOT_NAME: jenkins-x-bot[bot]
-  JXT_PIPELINE_GIT_TAG: v0.0.598
+  JXT_PIPELINE_GIT_TAG: v0.0.622
