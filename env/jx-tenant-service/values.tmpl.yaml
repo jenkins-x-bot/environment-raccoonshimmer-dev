@@ -20,3 +20,4 @@ segmentWriteKey: vault:segment:write-key
 env:
   BOT_NAME: jenkins-x-bot[bot]
   JXT_PIPELINE_GIT_TAG: v0.0.622
+  JXT_PIPELINE_TEMPLATE_NAME: cloudbees-poc-it-0.0.622
