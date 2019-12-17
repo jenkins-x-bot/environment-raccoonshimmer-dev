@@ -4,6 +4,7 @@ datadog:
     clusterName: raccoonshimmer
     tags:
       - env:dev
+      - clustername:raccoonshimmer
     nonLocalTraffic: true
     collectEvents: true
     leaderElection: true
