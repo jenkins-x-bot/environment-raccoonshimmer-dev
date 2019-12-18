@@ -1,10 +1,10 @@
 datadog:
   datadog:
     apiKey: vault:datadog-app:apiKey
-    clusterName: raccoonshimmer
+    clusterName: "{{ .Requirements.cluster.clusterName }}"
     tags:
       - env:dev
-      - clustername:raccoonshimmer
+      - clustername:"{{ .Requirements.cluster.clusterName }}"
     nonLocalTraffic: true
     collectEvents: true
     leaderElection: true
