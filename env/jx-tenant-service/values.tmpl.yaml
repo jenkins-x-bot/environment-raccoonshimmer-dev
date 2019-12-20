@@ -19,3 +19,4 @@ service:
 segmentWriteKey: vault:segment:write-key
 env:
   BOT_NAME: jenkins-x-bot[bot]
+  JX_FAIL_MISSING_SIGNATURE: true
