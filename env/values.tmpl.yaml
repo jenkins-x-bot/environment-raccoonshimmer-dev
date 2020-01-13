@@ -173,6 +173,6 @@ arcalos:
   prowHMACToken: vault:arcalos:prow-hmac-token
   ciSA: vault:arcalos-sa:json
   segmentWriteKey: vault:segment:write-key
-  runBootSchedule: "*/5 * * * *"
+  runBootSchedule: "0 * * * *"
 
 basicAuth: "{{ .Parameters.adminUser.username }}:{SHA}{{ .Parameters.adminUser.password | hashPassword }}"
