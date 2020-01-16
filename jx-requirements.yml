@@ -84,6 +84,6 @@ vault:
   serviceAccount: raccoonshimmer-vt
 velero: {}
 versionStream:
-  ref: v0.0.223
+  ref: v0.0.260
   url: https://github.com/cloudbees/arcalos-jenkins-x-versions.git
 webhook: prow
