@@ -19,5 +19,10 @@ datadog:
       limits:
         cpu: 300m
         memory: 512Mi
+    confd:
+      etcd.yaml: |-
+        init_config:
+        instances:
+          - url: "http://%%host%%:2379"
   daemonset:
     useHostPort: true
