@@ -21,6 +21,8 @@ datadog:
         memory: 512Mi
     confd:
       etcd.yaml: |-
+        ad_identifiers:
+          - etcd
         init_config:
         instances:
           - url: "http://%%host%%:2379"
