@@ -22,3 +22,9 @@ env:
   JX_FAIL_MISSING_SIGNATURE: true
   JX_LOG_LEVEL: debug
   JX_LOG_FORMAT: json
+
+updateController:
+  env:
+    TRACE_KUBE_API: true
+    JX_LOG_LEVEL: debug
+    JX_LOG_FORMAT: json
