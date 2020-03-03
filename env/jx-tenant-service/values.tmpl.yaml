@@ -26,5 +26,5 @@ updateController:
     JX_LOG_LEVEL: "debug"
     JX_LOG_FORMAT: "json"
   saasSecret:
-    name: arcalos-prod-secret
+    name: arcalos-alpha-prod-secret
     key: arcalosProdSA
