@@ -22,6 +22,7 @@ env:
   JX_FAIL_MISSING_SIGNATURE: true
 
 updateController:
+  location: us-central1
   env:
     JX_LOG_LEVEL: "debug"
     JX_LOG_FORMAT: "json"
