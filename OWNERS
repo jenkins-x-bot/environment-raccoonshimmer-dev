@@ -1,22 +1,11 @@
 approvers:
-- rawlingsj
-- jstrachan
-- ccojocar
 - garethjevans
-- pmuir
-- wbrefvem
-- warrenbailey
 - cagiti
 - macox
 - cjxd-bot
 reviewers:
-- rawlingsj
-- jstrachan
 - ccojocar
 - garethjevans
-- pmuir
-- wbrefvem
-- warrenbailey
 - cagiti
 - macox
 - cjxd-bot
