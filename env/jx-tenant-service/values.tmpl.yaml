@@ -20,6 +20,7 @@ segmentWriteKey: vault:segment:write-key
 env:
   BOT_NAME: jenkins-x-bot[bot]
   JX_FAIL_MISSING_SIGNATURE: true
+  GITHUB_APP_INSTALL_URL: https://github.com/apps/jenkins-x/installations/new
 
 updateController:
   location: us-central1
