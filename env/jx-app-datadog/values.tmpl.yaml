@@ -9,7 +9,7 @@ datadog:
     collectEvents: true
     leaderElection: true
     logsEnabled: true
-    logsConfigContainerCollectAll: false
+    logsConfigContainerCollectAll: true
     apmEnabled: true
     processAgentEnabled: false
     resources:
