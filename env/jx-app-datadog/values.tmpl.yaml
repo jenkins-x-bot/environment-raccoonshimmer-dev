@@ -3,8 +3,8 @@ datadog:
     apiKey: vault:datadog-app:apiKey
     clusterName: "{{ .Requirements.cluster.clusterName }}"
     tags:
-      - env:dev
-      - clustername:"{{ .Requirements.cluster.clusterName }}"
+      - env: dev
+      - clustername: "{{ .Requirements.cluster.clusterName }}"
     nonLocalTraffic: true
     collectEvents: true
     leaderElection: true
@@ -12,6 +12,7 @@ datadog:
     logsConfigContainerCollectAll: true
     apmEnabled: true
     processAgentEnabled: false
+    acInclude: image:gcr.io/abayer-pipeline-crd/tekton-for-jx/bash image:gcr.io/abayer-pipeline-crd/tekton-for-jx/creds-init image:gcr.io/abayer-pipeline-crd/tekton-for-jx/entrypoint image:gcr.io/abayer-pipeline-crd/tekton-for-jx/git-init image:gcr.io/jenkinsxio/builder-jx image:gcr.io/jenkinsxio/jx-tenant-service
     resources:
       requests:
         cpu: 200m
