@@ -1,6 +1,7 @@
 datadog:
   datadog:
     apiKey: vault:datadog-app:apiKey
+    appKey: vault:datadog-app:appKey
     clusterName: "{{ .Requirements.cluster.clusterName }}"
     tags:
       - env: dev
