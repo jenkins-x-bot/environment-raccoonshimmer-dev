@@ -5,29 +5,20 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/app-root: /jenkinsx
-  name: jxui
+  name: jxui-backend
 spec:
   rules:
-  # This domain MUST be first as the oauth proxy uses the first domain in the list to work out it's redirect url
   - host: dashboard.{{ $rootDomain }}
     http:
       paths:
         - backend:
-            serviceName: oauth-proxy-jxui-frontend
+            serviceName: oauth-proxy-jxui-backend
             servicePort: 80
-          path: /
-  - host: jxui{{ .Values.cluster.namespaceSubDomain }}{{ .Values.cluster.domain }}
-    http:
-      paths:
-        - backend:
-            serviceName: oauth-proxy-jxui-frontend
-            servicePort: 80
+          path: /api
 {{- if .Values.cluster.tls }}
   tls:
   - hosts:
       - dashboard.{{ $rootDomain }}
-      - jxui{{ .Values.cluster.namespaceSubDomain }}{{ .Values.cluster.domain }}
 {{- if eq .Values.certmanager.production "true" }}
     secretName: "tls-{{ .Values.cluster.domain | replace "." "-" }}-p"
 {{- else }}
