@@ -1,0 +1,25 @@
+{{- $prefix := printf "%s." .Requirements.cluster.project }}
+{{- $rootDomain := trimPrefix $prefix .Requirements.ingress.domain }}
+config:
+  clientID: "{{ .Parameters.dashboardAuthID }}"
+  clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
+extraArgs:
+  approval-prompt: none
+  cookie-secret: vault:cookie:secret
+  cookie-name: jxui-oidc
+  cookie-domain: ".{{ $rootDomain }}"
+  email-domain: "*"
+  oidc-issuer-url: https://cloudbees-development.auth0.com/
+  pass-authorization-header: true
+  pass-access-token: true
+  pass-basic-auth: false
+  provider: oidc
+  redirect-url: "https://dashboard.{{ $rootDomain }}/oauth2/callback"
+  scope: "openid email profile groups federated:id"
+  skip-provider-button: true
+  upstream: http://jxui:8080/
+  whitelist-domain: ".{{ $rootDomain }}"
+image:
+  repository: cagiti/oauth2_proxy
+  tag: 5.0.0_no_approval_prompt2
+fullnameOverride: oauth-proxy-jxui-backend

@@ -6,10 +6,7 @@ jxui:
   skipExposeService: true
   sso:
     create: true
-    connector: google
-    certIssuerName: letsencrypt-prod
-    domain: "{{ $rootDomain }}"
-    oidcIssuerUrl: "https://dex{{ .Requirements.ingress.namespaceSubDomain }}{{ $rootDomain }}"
+    connector: arcalos
   roxApiKey: vault:rox:api-key
   segmentWriteKey: vault:segment:write-key
   service:
