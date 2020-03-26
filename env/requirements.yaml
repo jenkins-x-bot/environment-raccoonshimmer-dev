@@ -33,7 +33,7 @@ dependencies:
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
 - name: jx-app-datadog
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
-  version: 0.0.8
+  version: 1.0.2
 - alias: oauth-proxy-jxui-frontend
   name: oauth2-proxy
   repository: https://kubernetes-charts.storage.googleapis.com/
