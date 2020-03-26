@@ -6,7 +6,7 @@ jxui:
   skipExposeService: true
   sso:
     create: true
-    connector: cloudbees-google
+    connector: google
     certIssuerName: letsencrypt-prod
     domain: "{{ $rootDomain }}"
     oidcIssuerUrl: "https://dex{{ .Requirements.ingress.namespaceSubDomain }}{{ $rootDomain }}"
