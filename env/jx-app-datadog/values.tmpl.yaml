@@ -11,7 +11,7 @@ datadog:
     leaderElection: true
     logs:
       enabled: true
-      configContainerCollectAll: false
+      configContainerCollectAll: true
     apmEnabled: true
     processAgentEnabled: false
     acInclude: image:gcr.io/abayer-pipeline-crd/tekton-for-jx/bash image:gcr.io/abayer-pipeline-crd/tekton-for-jx/creds-init image:gcr.io/abayer-pipeline-crd/tekton-for-jx/entrypoint image:gcr.io/abayer-pipeline-crd/tekton-for-jx/git-init image:gcr.io/jenkinsxio/builder-jx image:gcr.io/jenkinsxio/jx-tenant-service
