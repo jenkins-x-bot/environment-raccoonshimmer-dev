@@ -18,9 +18,9 @@ service:
     fabric8.io/exposeUrl: https://jx-tenant-service{{ .Requirements.ingress.namespaceSubDomain }}{{ .Requirements.ingress.domain }}
 segmentWriteKey: vault:segment:write-key
 env:
-  BOT_NAME: jenkins-x-bot[bot]
+  BOT_NAME: cloudbees-ci-cd-play[bot]
   JX_FAIL_MISSING_SIGNATURE: true
-  GITHUB_APP_INSTALL_URL: https://github.com/apps/jenkins-x/installations/new
+  GITHUB_APP_INSTALL_URL: https://github.com/apps/cloudbees-ci-cd-play/installations/new
 
 updateController:
   location: us-central1
