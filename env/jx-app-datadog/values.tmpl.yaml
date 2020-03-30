@@ -11,7 +11,7 @@ datadog:
     leaderElection: true
     logs:
       enabled: true
-      configContainerCollectAll: true
+      containerCollectAll: true
     apmEnabled: true
     processAgentEnabled: false
     acInclude: image:bash image:creds-init image:entrypoint image:git-init image:builder-jx image:jx-tenant-service
