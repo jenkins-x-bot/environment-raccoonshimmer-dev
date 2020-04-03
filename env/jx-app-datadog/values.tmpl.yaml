@@ -6,14 +6,17 @@ datadog:
     tags:
       - env: dev
       - clustername: "{{ .Requirements.cluster.clusterName }}"
-    nonLocalTraffic: true
+    dogstatsd:
+      nonLocalTraffic: true
     collectEvents: true
     leaderElection: true
     logs:
       enabled: true
       containerCollectAll: true
-    apmEnabled: true
-    processAgentEnabled: false
+    apm:
+      enabled: true
+    processAgent:
+      enabled: false
     acInclude: image:bash image:creds-init image:entrypoint image:git-init image:builder-jx image:jx-tenant-service
     kubeStateMetrics:
       enabled: false
