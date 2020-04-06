@@ -3,9 +3,7 @@ datadog:
     apiKey: vault:datadog-app:apiKey
     appKey: vault:datadog-app:appKey
     clusterName: "{{ .Requirements.cluster.clusterName }}"
-    tags:
-      - env: dev
-      - clustername: "{{ .Requirements.cluster.clusterName }}"
+    tags: env:dev clustername:{{ .Requirements.cluster.clusterName }}
     dogstatsd:
       nonLocalTraffic: true
     collectEvents: true
