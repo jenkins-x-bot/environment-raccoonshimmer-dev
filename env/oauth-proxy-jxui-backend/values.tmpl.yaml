@@ -20,6 +20,6 @@ extraArgs:
   upstream: http://jxui:8080/
   whitelist-domain: ".{{ $rootDomain }}"
 image:
-  repository: bitnami/oauth2_proxy
+  repository: bitnami/oauth2-proxy
   tag: 5.1.0
 fullnameOverride: oauth-proxy-jxui-backend
