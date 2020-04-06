@@ -4,7 +4,7 @@ config:
   clientID: "{{ .Parameters.dashboardAuthID }}"
   clientSecret: "{{ .Parameters.dashboardAuthSecret }}"
 extraArgs:
-  approval-prompt: none
+  prompt: select_account
   cookie-secret: vault:cookie:secret
   cookie-name: jxui-oidc
   cookie-domain: ".{{ $rootDomain }}"
@@ -20,6 +20,6 @@ extraArgs:
   upstream: http://jxui:8080/
   whitelist-domain: ".{{ $rootDomain }}"
 image:
-  repository: cagiti/oauth2_proxy
-  tag: 5.0.0_no_approval_prompt2
+  repository: bitnami/oauth2_proxy
+  tag: 5.1.0
 fullnameOverride: oauth-proxy-jxui-backend
