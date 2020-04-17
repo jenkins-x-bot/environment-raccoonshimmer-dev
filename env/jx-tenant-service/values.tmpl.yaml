@@ -21,6 +21,7 @@ env:
   BOT_NAME: cloudbees-ci-cd-play[bot]
   JX_FAIL_MISSING_SIGNATURE: true
   GITHUB_APP_INSTALL_URL: https://github.com/apps/cloudbees-ci-cd-play/installations/new
+  GITHUB_APP_NAME: "Cloudbees CI/CD Play"
 
 updateController:
   location: us-central1
