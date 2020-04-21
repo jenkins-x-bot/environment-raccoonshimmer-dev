@@ -18,6 +18,10 @@ cluster:
   tls: true
 {{- end }}
 
+datadog:
+  apiKey: vault:datadog-app:apiKey
+  appKey: vault:datadog-app:appKey
+
 gitops:
   versionStreamUrl: {{ .Requirements.versionStream.url }}
   versionStreamRef: {{ .Requirements.versionStream.ref }}
