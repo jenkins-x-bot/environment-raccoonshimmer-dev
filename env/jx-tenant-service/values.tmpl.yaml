@@ -17,6 +17,7 @@ service:
     fabric8.io/expose: "false"
     fabric8.io/exposeUrl: https://jx-tenant-service{{ .Requirements.ingress.namespaceSubDomain }}{{ .Requirements.ingress.domain }}
 segmentWriteKey: vault:segment:write-key
+roxApiKey: vault:rox:api-key
 env:
   BOT_NAME: cloudbees-ci-cd-play[bot]
   JX_FAIL_MISSING_SIGNATURE: true
