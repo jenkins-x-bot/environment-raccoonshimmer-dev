@@ -5,7 +5,7 @@ jxui:
   replicaCount: 2
   skipExposeService: true
   sso:
-    create: false
+    create: true
     connector: arcalos
   roxApiKey: vault:rox:api-key
   segmentWriteKey: vault:segment:write-key
