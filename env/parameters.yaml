@@ -6,6 +6,9 @@ dashboardAuthOrg: arcalos-dashboard
 dashboardAuthSecret: vault:raccoonshimmer:dashboardAuthSecret
 dashboardGrpchost: dex.jx
 enableDocker: false
+kuberhealthy:
+  username: admin
+  password: vault:kuberhealthy/basic-auth:password
 parentDNSZone: play-jxaas-live-parent
 parentDomain: play-jxaas.live
 parentProject: dev-arcalos-domain-name
