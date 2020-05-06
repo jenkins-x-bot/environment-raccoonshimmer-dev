@@ -66,6 +66,9 @@ gitops:
     owner: "{{ .Environments.production.owner | default .Requirements.cluster.environmentGitOwner }}"
     server: ""
 
+kuberhealthy:
+  basicAuth: "{{ .Parameters.kuberhealthy.username }}:{SHA}{{ .Parameters.kuberhealthy.password | hashPassword }}"
+
 storage:
   logs:
     url: "{{ .Requirements.storage.logs.url }}"
