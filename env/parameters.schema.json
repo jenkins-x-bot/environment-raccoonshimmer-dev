@@ -29,8 +29,7 @@
     "kuberhealthy": {
       "type": "object",
       "required": [
-        "username",
-        "password"
+        "username"
       ],
       "properties": {
         "username": {
