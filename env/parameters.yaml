@@ -8,7 +8,7 @@ dashboardGrpchost: dex.jx
 enableDocker: false
 kuberhealthy:
   username: admin
-  password: vault:kuberhealthy/basic-auth:password
+  password: vault:kuberhealthy/basicAuth:password
 parentDNSZone: play-jxaas-live-parent
 parentDomain: play-jxaas.live
 parentProject: dev-arcalos-domain-name
