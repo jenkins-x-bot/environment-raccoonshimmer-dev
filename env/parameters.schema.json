@@ -26,23 +26,6 @@
         }
       }
     },
-    "kuberhealthy": {
-      "type": "object",
-      "properties": {
-        "username": {
-          "type": "string",
-          "title": "Kuberhealthy Admin Username",
-          "description": "The Admin Username will be used by Kuberhealthy",
-          "default": "admin"
-        },
-        "password": {
-          "type": "string",
-          "format": "password",
-          "title": "Kuberhealthy ingress Password",
-          "description": "The Admin Password will be used by Kuberhealthy"
-        }
-      }
-    },
     "pipelineUser": {
       "type": "object",
       "required": [
